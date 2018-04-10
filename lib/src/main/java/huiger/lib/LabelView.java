@@ -26,7 +26,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
  * *     *  *     *     blog : huiGer.top
  * *     *  * * * *     Desc : 标签
  ****************************************************************/
-public class LibelView extends View {
+public class LabelView extends View {
 
     /**
      * 最小宽高
@@ -114,14 +114,14 @@ public class LibelView extends View {
     private float mLineDisText;
 
 
-    public LibelView(Context context) {
+    public LabelView(Context context) {
         this(context, null);
     }
-    public LibelView(Context context, AttributeSet attrs) {
+    public LabelView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public LibelView(Context context, AttributeSet attrs, int defStyle) {
+    public LabelView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
         init(context, attrs);
@@ -135,13 +135,13 @@ public class LibelView extends View {
         mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPath = new Path[]{new Path(), new Path(), new Path()};
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LibelView);
-        mLinePaint.setStrokeWidth(typedArray.getDimensionPixelSize(R.styleable.LibelView_libelViewLineSize, Utils.sp2px(context, 2)));
-        mLineColor = typedArray.getColor(R.styleable.LibelView_libelViewLineColor, Color.WHITE);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LabelView);
+        mLinePaint.setStrokeWidth(typedArray.getDimensionPixelSize(R.styleable.LabelView_labelViewLineSize, Utils.sp2px(context, 2)));
+        mLineColor = typedArray.getColor(R.styleable.LabelView_labelViewLineColor, Color.WHITE);
         mLinePaint.setColor(mLineColor);
-        mTextPaint.setTextSize(typedArray.getDimensionPixelSize(R.styleable.LibelView_libelViewTextSize, Utils.sp2px(context, 15)));
-        mTextPaint.setColor(typedArray.getColor(R.styleable.LibelView_libelViewTextColor, Color.WHITE));
-        mScrollEnabled = typedArray.getBoolean(R.styleable.LibelView_libelViewScrollEnabled, false);
+        mTextPaint.setTextSize(typedArray.getDimensionPixelSize(R.styleable.LabelView_labelViewTextSize, Utils.sp2px(context, 15)));
+        mTextPaint.setColor(typedArray.getColor(R.styleable.LabelView_labelViewTextColor, Color.WHITE));
+        mScrollEnabled = typedArray.getBoolean(R.styleable.LabelView_labelViewScrollEnabled, false);
         typedArray.recycle();
 
         mixHeight = Utils.dp2px(context, 80);

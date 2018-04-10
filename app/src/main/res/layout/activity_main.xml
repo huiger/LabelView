@@ -18,29 +18,29 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <huiger.lib.LibelView
-            android:id="@+id/libelView1"
+        <huiger.lib.LabelView
+            android:id="@+id/labelView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <huiger.lib.LibelView
-            android:id="@+id/libelView2"
+        <huiger.lib.LabelView
+            android:id="@+id/labelView2"
             android:layout_width="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            app:libelViewScrollEnabled="true"
+            app:labelViewScrollEnabled="true"
             android:layout_height="wrap_content"/>
 
-        <huiger.lib.LibelView
-            android:id="@+id/libelView3"
+        <huiger.lib.LabelView
+            android:id="@+id/labelView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <huiger.lib.LibelView
-            android:id="@+id/libelView4"
+        <huiger.lib.LabelView
+            android:id="@+id/labelView4"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            app:libelViewScrollEnabled="true"/>
+            app:labelViewScrollEnabled="true"/>
 
         <FrameLayout
             android:layout_width="200dp"
@@ -51,11 +51,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@mipmap/head"/>
-            <huiger.lib.LibelView
-                android:id="@+id/libelView5"
+            <huiger.lib.LabelView
+                android:id="@+id/labelView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:libelViewScrollEnabled="true"/>
+                app:labelViewScrollEnabled="true"/>
 
         </FrameLayout>
 

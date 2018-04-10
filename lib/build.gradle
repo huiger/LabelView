@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -8,7 +9,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -28,4 +29,13 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
+}
+
+publish {
+    userOrg = 'huiger'//bintray.com用户名
+    groupId = 'com.huiger'//jcenter上的路径
+    artifactId = 'labelView'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'LabelView '//描述，不重要
+    website = 'https://github.com/huiger/LabelView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

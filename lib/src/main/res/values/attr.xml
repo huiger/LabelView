@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="LibelView">
-        <attr name="libelViewLineColor" format="color"/>
-        <attr name="libelViewLineSize" format="dimension"/>
-        <attr name="libelViewTextColor" format="color"/>
-        <attr name="libelViewTextSize" format="dimension"/>
-        <attr name="libelViewScrollEnabled" format="boolean"/>
+    <declare-styleable name="LabelView">
+        <attr name="labelViewLineColor" format="color"/>
+        <attr name="labelViewLineSize" format="dimension"/>
+        <attr name="labelViewTextColor" format="color"/>
+        <attr name="labelViewTextSize" format="dimension"/>
+        <attr name="labelViewScrollEnabled" format="boolean"/>
     </declare-styleable>
     
 </resources>
