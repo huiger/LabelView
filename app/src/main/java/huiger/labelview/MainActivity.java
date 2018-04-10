@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         libelView2.setmCircleX(100f);
 
         LibelView libelView3 = (LibelView) findViewById(R.id.libelView3);
-        libelView3.setText("huiGer code", "哈哈哈哈", "测试一下测试一下测试一下");
+        libelView3.setText("huiGer code", "哈哈哈哈", "测试一下测试一下");
 
         LibelView libelView4 = (LibelView) findViewById(R.id.libelView4);
         libelView4.setText("huiGer code", "哈哈哈哈", "活动一下");
