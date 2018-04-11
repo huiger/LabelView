@@ -13,14 +13,13 @@ import android.graphics.Shader;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.HapticFeedbackConstants;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
 /****************************************************************
- * *     *  * * * *     Created by <huiGer>
+ * *     *  * * * *     Created by huiGer
  * *     *  *           Time : 2018/4/8 15:36.
  * * * * *  *   * *     Email: zhihuiemail@163.com
  * *     *  *     *     blog : huiGer.top
@@ -86,7 +85,6 @@ public class LabelView extends View {
             super.handleMessage(msg);
             if (msg.what == 1) {
                 isScroll = false;
-                Log.d("msg", "LibelView -> handleMessage: " + "msg.what == 1");
                 postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -95,8 +93,6 @@ public class LabelView extends View {
                     }
                 }, 2000);
             } else if (msg.what == 2) {
-                Log.d("msg", "LibelView -> handleMessage: " + "msg.what == 2");
-                Log.d("msg", "LibelView -> handleMessage: " + "长按启动");
                 isScroll = true;
                 performHapticFeedback(HapticFeedbackConstants.LONG_PRESS, HapticFeedbackConstants.FLAG_IGNORE_GLOBAL_SETTING);
                 removeCallbacksAndMessages(null);
@@ -153,7 +149,6 @@ public class LabelView extends View {
 
         radialGradient = new RadialGradient(0, mCircleY,
                 mRadius, 0x7f000000, 0x3f000000, Shader.TileMode.CLAMP);
-
 
     }
 
@@ -383,7 +378,7 @@ public class LabelView extends View {
     /**
      * 设置文字
      *
-     * @param str
+     * @param str 要显示的文字
      */
     public void setText(String... str) {
         if (str.length > 3) {

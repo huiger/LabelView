@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.TypedValue;
 
 /****************************************************************
- * *     *  * * * *     Created by <huiGer>
+ * *     *  * * * *     Created by huiGer
  * *     *  *           Time : 2018/4/8 15:01.
  * * * * *  *   * *     Email: zhihuiemail@163.com
  * *     *  *     *     blog : huiGer.top
