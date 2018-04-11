@@ -213,7 +213,7 @@ public class LabelView extends View {
                     mCircleX = event.getX();
                     mCircleY = event.getY();
                     invalidate();
-                    getParent().requestDisallowInterceptTouchEvent(true);
+                    getParent().requestDisallowInterceptTouchEvent(true);// 消费事件
                 }
                 break;
             case MotionEvent.ACTION_UP:     // 抬起
