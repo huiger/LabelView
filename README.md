@@ -22,13 +22,14 @@
 ```
 
 4. setmCircleX(float mCircleX)
-> 设置原点的x轴(针对该VIew所占的面积的x轴)
+ 设置原点的x轴(针对该VIew所占的面积的x轴)
 
 5. setmCircleY(float mCircleY)
-> 设置原点的Y轴(针对该VIew所占的面积的Y轴)
+设置原点的Y轴(针对该VIew所占的面积的Y轴)
+
 
 6. setmScrollEnabled(boolean mScrollEnabled)
-> 设置该view是否可移动(当然为true后, 长按后才可移动)
+设置该view是否可移动(当然为true后, 长按后才可移动)
 
 
 ## 参数介绍
