@@ -3,7 +3,7 @@
 ## 这是一款可滑动的标签View, 可直接设置显示位置
 
 ## 效果图
-![](http://ouvaxa1n0.bkt.clouddn.com/labelView.gif)
+![](./img/labelView.gif)
 ## 你可以这样使用
 1. 引入
 > compile 'com.huiger.labelView:1.0.0'
